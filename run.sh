@@ -1,4 +1,5 @@
 #!/bin/bash -l
+echo "running ""$0"
 echo "used for running regression when the number of bjobs less than 100, running 6 pieces of regression at most"
 for ((i=0; i<144; i++))
 do
@@ -14,13 +15,10 @@ do
         if [ ${wi} -lt 6 ]
         then
             echo "Running regression in this line"
-            sleep 60
+            sleep 1
         fi
-        sleep 60 # check every minute.
+        sleep 1 # check every minute.
     fi
-
 done
-
-
 
 
