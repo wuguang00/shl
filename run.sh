@@ -16,6 +16,8 @@ do
         then
             echo "Running regression in this line"
             sleep 1
+        else
+            break # if wi >=6, then break the for loop.
         fi
         sleep 1 # check every minute.
     fi
