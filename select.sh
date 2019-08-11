@@ -24,10 +24,10 @@ function memusage {
     du -h
 }
 
-PS3="Enter option: "
-select option in "Display disk space" "Display logged on users" "Dispaly memory useage" "Exit program"
+PS3="Enter option (1, 2, 3, 4): " # it is used for the notes. Wait a input and show this description, the default notes: #?
+select option in "Display disk space" "Display logged on users" "Dispaly memory useage" "Exit program" # select from this list
 do
-    case $option in
+    case $option in # used for match.
         "Exit program")
             break ;;
         "Display disk space")
@@ -35,7 +35,6 @@ do
         "Display logged on users")
             memusage ;;
         *)
-            clear
             whoseon
             echo "Sorry, wrong selection";;
     esac
