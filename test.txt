@@ -1,0 +1,3 @@
+this is a trial of the test script.
+this is the second trial of the test script.
+this is a different line. this is an unmatched line, but will display on the STDOUT, but will not show in trial.txt.
