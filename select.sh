@@ -9,7 +9,7 @@ function showdescription() {
 function diskspace {
     clear
     showdescription "df -k"
-    df -k
+    df -h
 }
 
 function whoseon {
