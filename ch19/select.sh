@@ -1,5 +1,5 @@
 #!/bin/bash -l
-# use the metod of select, just for a test
+# use the metod of select, study, learn
 
 function showdescription() {
     showcontent=$1
@@ -39,6 +39,5 @@ do
             echo "Sorry, wrong selection";;
     esac
 done
-
 
 

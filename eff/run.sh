@@ -1,5 +1,7 @@
 #!/bin/bash -l
-echo "running ""$0"
+
+echo "running $0, this is used for launching a regression for pattern/testcase automatically."
+echo "It can save a lot of time, if you make a good plan with this file."
 echo "used for running regression when the number of bjobs less than 100, running 6 pieces of regression at most"
 for ((i=0; i<144; i++))
 do
@@ -22,7 +24,5 @@ do
         sleep 1 # check every minute.
     fi
 done
-
-
 
 
