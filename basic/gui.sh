@@ -1,5 +1,6 @@
 #!/bin/bash -l
 # This is case used for explanation for the menu in script
+
 function diskspace {
     clear
     df -h
@@ -48,8 +49,5 @@ do
     read -n 1 line
 done
 clear
-
-
-
 
 

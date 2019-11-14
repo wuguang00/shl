@@ -1,10 +1,10 @@
 #!/bin/bash -l
-# Andy Wu from Shanghai
-# used for each file and directory in assigned directory
+# Andy Wu, Shanghai, wuguang20084520@163.com
+# Used for each file and directory in assigned directory
 
 function foreachdir()
 {
-    local curdir workdir        # maybe useful, the variable should be split by space only, local variable
+    local curdir workdir                                        # maybe useful, the variable should be split by space only, local variable
     workdir=$1
     cd ${workdir}
 
@@ -29,7 +29,6 @@ function foreachdir()
         fi
     done
 }
-
 
 if test -d $1
 then
