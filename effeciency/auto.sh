@@ -1,11 +1,12 @@
 #!/bin/bash -l
+
 echo "This is just for personal use only,"
 echo "running ""$0"
 echo "used for running regression when the number of bjobs less than 100, running 6 pieces of regression at most, try to launch regression every hour."
 export pjname=$1
-if [ ${pjname} == "0807" ] # used for check basic information to lauch the regression, avoid launch unintennally.
+if [ ${pjname} == "1107" ] # used for check basic information to lauch the regression, avoid launch unintennally.
 then
-    for ((i=0; i<28; i++))
+    for ((i=0; i<28; i++)) # c style
     do
         sum=`bjobs | wc -l` # bjobs is used for LSF, workstation
         if test ${sum} -gt 3
@@ -38,4 +39,3 @@ then
 fi
 
     
-
