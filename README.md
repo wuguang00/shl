@@ -6,6 +6,6 @@
 ####################################################################################################
 # -- basic          comes from a book called, just for practice, available everywhere and whenever.
 ####################################################################################################
-# -- effeciency     comes from daily work, Just for accumulating useful codes.
+# -- practicece     comes from daily work, Just for accumulating useful codes.
 ####################################################################################################
 
