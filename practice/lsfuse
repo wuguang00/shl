@@ -1,0 +1,28 @@
+# IBM: Platform LSF(Load Sharing Facility) from slides by USTC 
+# bsub for launching the job of LSF
+
+bqueues
+lsload                                          # show nodes' status
+bhosts                                          # show nodes' status available
+bhosts hacs02                                   # assigned special host
+busers                                          # it will just show yourself
+busers wuguang                                  # show the user
+
+busb -t time                                    # assigned time to launch
+bjobs
+bjobs -u all
+bjobs -q queuename
+bjobs -r
+bjobs -l 00001
+bjobs -p 00002
+bpeek 00003
+bpeek -f 00004                                  # the tail of the log
+bkill 0                                         # kill all jobs belong to yourself
+bstop 00005                                     # will pend the job of ID 00005, and let other jobs to execute.
+bresume 00005                                   # resume 00005
+btop 00006                                      # put the ID 00006 the first priority.
+btop 00007 2                                    # put the ID 00007 the second priority.
+bbot 00008                                      # put the ID 00008 last in the queue.
+bacct                                           # will show historical information
+bacct -l                                        # will show historical information
+
