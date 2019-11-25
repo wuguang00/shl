@@ -4,7 +4,7 @@
 # It is used just for one time by my own
 
 IFS=$(echo -en "\n\b")                                  # used for the file name can use space in it.
-for tdir in $(ls)
+for tdir in $(ls)                                       # write the codes in hierarchy according to the keywords.
 do
     if [ -d $tdir -a ${#tdir} -gt 8 ]
     then
@@ -40,4 +40,4 @@ done
 
 echo "All Done."
 
-
+# [[ ]] is better than [ ], [] is a command, [[ ]] is keyword.
