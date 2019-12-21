@@ -1,7 +1,7 @@
 #!/bin/bash -l
 # sed -i used for modify the file directly. Add a file as stdin
 
-echo 'The first example, &&&&&' | sed 's/\&\&/||/g'                                        # replace && with ||, & must be transformed.
+echo 'The first example, &&&&&' | sed 's/\&\&/||/g'                     # replace && with ||, & must be transformed.
 sed -i '.bak' 's/aaaaaaa/start/g' ./awkusage.sh                         # The basical usage. '.bak' is backup file. when -i is used.
 echo 
 
