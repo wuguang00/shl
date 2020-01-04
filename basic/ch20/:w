@@ -228,8 +228,5 @@ echo "rich@here.now." | ./ismail.sh
 echo "rich@here-now" | ./ismail.sh
 echo "rich.blum@here.now" | ./ismail.sh
 echo "rich_blum@here.now" | ./ismail.sh
-echo "rich/blum@here.now" | ./ismail.sh
-echo "rich#blum@here.now" | ./ismail.sh
-echo "rich*blum@here.now" | ./ismail.sh
-echo "rich+blum@here.now" | ./ismail.sh # this line matches the pattern
+echo "rich.blum@here.now" | ./ismail.sh
 
