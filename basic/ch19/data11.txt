@@ -1,4 +1,5 @@
 Blum, R         Browncoat
+echo "rich*blum@here.now" | ./ismail.sh
 McGiness, A     Alliance
 Bresnahan, C    Browncoat
 Harken, C       Alliance
