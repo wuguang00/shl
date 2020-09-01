@@ -1,5 +1,6 @@
 #!/bin/bash -l
 
+:a
 echo "This is just for personal use only,"
 echo "Running ""$0"
 echo "used for running regression when the number of bjobs less than 100, running 6 pieces of regression at most, try to launch regression every hour."
@@ -40,5 +41,3 @@ then
         fi
     done
 fi
-
-    

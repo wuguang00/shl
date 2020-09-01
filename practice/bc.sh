@@ -28,5 +28,3 @@ EOF
 
 echo "The final answer for this mess is $var5"
 
-
-

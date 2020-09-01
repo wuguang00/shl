@@ -1,5 +1,4 @@
 #!/bin/bash -l
-
 # this script is used for showing the continue 2 times.
 for ((i=1;i<=8;i++))
 do

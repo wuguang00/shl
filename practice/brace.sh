@@ -50,6 +50,3 @@ echo $[2+3]                                             # using to calulate expr
 echo $[${tm}+${all}]                                    # using to calulate expression, only used for integer
 
 
-
-
-

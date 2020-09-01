@@ -13,7 +13,7 @@ done
 
 for n in {1..100}                     # sequence for loop
 do
-    ((sum+=n))
+    ((sum+=n))                      # used for calculate expression.
 done
 
 echo $sum
