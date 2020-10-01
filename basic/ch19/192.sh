@@ -26,6 +26,7 @@ echo "/bin/bash/" | sed 's/\/bin\/bash\//\/bin\/csh\//g'          # to show the 
 echo "/bin/bash/" | sed 's#/bin/bash/#/bin/csh/#g'
 echo "/bin/bash/" | sed 's@/bin/bash/@/bin/csh/@g'
 echo "/bin/bash/" | sed 's!/bin/bash/!/bin/csh/!g'
+echo "/bin/bash/" | sed 's%/bin/bash/%/bin/csh/%g'
 
 # line addressing 2,4s, 2,$s,   /pattern/command
 
