@@ -1,3 +1,0 @@
-1 this is a test of the test script.
-2 this is the second test of the test script.
-3 this is a different line. this is an unmatched line, but will display on the STDOUT, but will not show in test.txt.

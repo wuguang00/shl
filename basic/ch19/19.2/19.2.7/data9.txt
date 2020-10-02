@@ -1,0 +1,1 @@
+This line contains $ at the end of this line.
