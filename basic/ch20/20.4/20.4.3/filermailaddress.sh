@@ -1,32 +1,30 @@
 #!/bin/bash
-# 2020-10-03 01:17:49 
+# 2020-10-03 23:54:27
 
 echo "------------------ cmd 1 ------------------"
-echo "beeet" | awk '/be+t/{print $0}'
+echo "rich@here.now" | ./ismail.sh
 
 echo "------------------ cmd 2 ------------------"
-echo "beet" | awk '/be+t/{print $0}'
+echo "rich@here.now." | ./ismail.sh
 
 echo "------------------ cmd 3 ------------------"
-echo "bet" | awk '/be+t/{print $0}'
+echo "rich@here-now" | ./ismail.sh
 
 echo "------------------ cmd 4 ------------------"
-echo "bt" | awk '/be+t/{print $0}'
+echo "rich.blum@here.now" | ./ismail.sh
 
 echo "------------------ cmd 5 ------------------"
-echo "bt" | awk '/b[ae]+t/{print $0}'
+echo "rich_blum@here.now" | ./ismail.sh
 
 echo "------------------ cmd 6 ------------------"
-echo "bat" | awk '/b[ae]+t/{print $0}'
+echo "rich/blum@here.now" | ./ismail.sh
 
 echo "------------------ cmd 7 ------------------"
-echo "bet" | awk '/b[ae]+t/{print $0}'
+echo "rich#blum@here.now" | ./ismail.sh
 
 echo "------------------ cmd 8 ------------------"
-echo "beat" | awk '/b[ae]+t/{print $0}'
+echo "rich*blum@here.now" | ./ismail.sh
 
 echo "------------------ cmd 9 ------------------"
-echo "beet" | awk '/b[ae]+t/{print $0}'
+echo "rich+blum@here.now" | ./ismail.sh
 
-echo "------------------ cmd 10 ------------------"
-echo "beeat" | awk '/b[ae]+t/{print $0}'
