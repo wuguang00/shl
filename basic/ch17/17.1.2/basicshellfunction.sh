@@ -1,6 +1,15 @@
 #!/bin/bash -l
-# coding according to the textbook
-# using a function in a script
+
+# 2 formats to define a function:
+# Format 1:
+# function name {
+#     commands
+# }
+# 
+# Format 1:
+# name() {
+#     commands
+# }
 
 # case 1
 function func1 {
