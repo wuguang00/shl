@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/wuguang/config/shl'
+let g:netrw_dirhist_2='/Users/wuguang'
+let g:netrw_dirhist_1='/Users/wuguang/config'
+let g:netrw_dirhist_0='/Users/wuguang/config/macbookpro'
+let g:netrw_dirhist_9='/Users/wuguang/config'
+let g:netrw_dirhist_8='/Users/wuguang/config/shl'
+let g:netrw_dirhist_7='/Users/wuguang/config'
+let g:netrw_dirhist_6='/Users/wuguang/config/uvm'
+let g:netrw_dirhist_5='/Users/wuguang/config'
+let g:netrw_dirhist_4='/Users/wuguang'
