@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/andy.wu/cc/the_c_programming_language/ch3/3.6'
+let g:netrw_dirhist_2='/home/andy.wu/cc/the_c_programming_language/ch4/4.2'
+let g:netrw_dirhist_3='/home/andy.wu/cc/the_c_programming_language/ch4'
+let g:netrw_dirhist_4='/home/andy.wu/cc/the_c_programming_language'
+let g:netrw_dirhist_5='/home/andy.wu/cc'
+let g:netrw_dirhist_6='/home/andy.wu'
