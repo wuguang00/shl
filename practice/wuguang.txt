@@ -1,0 +1,16 @@
+
+#!/bin/bash
+#!/bin/sh
+
+
+# 2021-02-22 14:20:46
+# If you want to download the depository for the python and shell
+# git clone https://github.com/wuguang00/py.git
+# git clone https://github.com/wuguang00/shl.git
+
+
+
+
+
+
+
