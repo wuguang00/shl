@@ -37,3 +37,4 @@ alias vdk='/usr/vendor/synopsys/start_rt.sh'
 alias vd='cd /usr/vendor/synopsys/workspace/andy.wu/'
 
 alias soc='cd /usr/vendor/synopsys/workspace/andy.wu'
+
