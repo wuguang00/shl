@@ -1,0 +1,17 @@
+
+This information is available for Andy Wu only.
+
+For the server in Local network.
+
+IP: 10.10.10.218 Port: 22
+username: andy.wu
+password: andy.wu
+
+
+IP: 10.5.20.17 Port: 22
+username: andy.wu
+password: Wuguang1988
+
+
+
+

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# When $SHELL is bash, you can source this file directly.
+
+if [[ "$1" == "A" ]] # Default option used to setup basic enviroment for arm64
+then
+    # Delete exist ones in PATH.
+    export PATH=`echo $PATH | sed 's/\/opt\/gcc-arm-none-eabi-8-2019-q3-update\/bin://g'`
+    export PATH=`echo $PATH | sed 's/\/opt\/gcc-linaro-7.4.1-2019.02-x86_64_aarch64-linux-gnu\/bin://g'`
+    export PATH=/opt/gcc-linaro-7.4.1-2019.02-x86_64_aarch64-linux-gnu/bin:$PATH
+	export ARCH=arm64
+    export CROSS_COMPILE=aarch64-linux-gnu-
+elif [[ "$1" == "M" ]] 
+then
+    # Delete exist ones in PATH.
+    export PATH=`echo $PATH | sed 's/\/opt\/gcc-linaro-7.4.1-2019.02-x86_64_aarch64-linux-gnu\/bin://g'`
+    export PATH=`echo $PATH | sed 's/\/opt\/gcc-arm-none-eabi-8-2019-q3-update\/bin://g'`
+    export PATH=/opt/gcc-arm-none-eabi-8-2019-q3-update/bin:$PATH
+	export ARCH=armv7m
+    export CROSS_COMPILE=arm-none-eabi-
+fi
+
+export LD_LIBRARY_PATH=/opt/glibc-2.14/lib
+
+
