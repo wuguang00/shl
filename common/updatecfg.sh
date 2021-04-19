@@ -7,3 +7,5 @@
 \cp ~/.bashrc ./
 \cp -rf ~/.vim ./
 
+
+# just try
