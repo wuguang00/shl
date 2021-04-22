@@ -1,7 +1,6 @@
-set isfname+={,}
-set nobackup
 winpos 0 0                                                  " set the default position of the vim window
-set lines=50 columns=212                                    " set the default size of the vim window
+" set linespace=2                                           " set the heigh of line
+set lines=58 columns=237                                    " set the default size of the vim window
 colorscheme evening									        " set colorscheme
 " colorscheme options: torte, molokai, phd
 set isfname+={,}                                            " make it can distinguish the filename
@@ -15,7 +14,6 @@ set noswapfile
 set showmode
 set showmatch
 set smartindent
-set cursorline                                              " set
 set selection=exclusive
 set selectmode=mouse,key
 set autoread												" set autoread when current files are modified.
@@ -24,7 +22,9 @@ set clipboard+=unnamed										" share paste pad
 set makeprg=g++\ -Wall\ \ %								    " make excute.
 set autowrite												" save automatically
 set cursorline												" hightlight current line
+set cursorcolumn                                            " set cursorcolumn
 set magic                   								" set magic
+" set linespace=2                                           " set the heigh of line
 set guioptions-=T           								" hide tool list
 set guioptions-=m           								" hide menu list
 " set go=
@@ -92,6 +92,10 @@ func SetTitle()
         call setline(1,"\#!/usr/bin/python3")
         call setline(2,"# coding=utf-8")
         call append(line(".")+1, "")
+    elseif expand("%:e") == 'sv'
+        call setline(1, "`ifndef ".toupper(expand("%:r"))."__SV")
+        call append(line("."), "`define ".toupper(expand("%:r"))."__SV")
+        call append(line(".")+1, "`endif")
     else
         call setline(1,"/**************************************************************************")
         call append(line("."), " File Name:     ".expand("%"))
@@ -118,11 +122,6 @@ func SetTitle()
         call append(line(".")+6, "#ifndef ".toupper(expand("%:r"))."_H_")
         call append(line(".")+7, "#define ".toupper(expand("%:r"))."_H_")
         call append(line(".")+8, "#endif")
-    endif
-    if expand("%:e") == 'sv'
-        call append(line(".")+6, "`ifndef ".toupper(expand("%:r"))."__SV")
-        call append(line(".")+7, "`define ".toupper(expand("%:r"))."__SV")
-        call append(line(".")+8, "`endif")
     endif
     if &filetype == 'java'
         call append(line(".")+6, "public class ".expand("%:r"))
