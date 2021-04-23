@@ -1,0 +1,108 @@
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+Usual path for work.
+/usr/synopsys/workspace/andy.wu/
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+
+The step for push the codes to the deposit.
+
+$ git clone  https://github.com/wuguang00/shl.git
+$ git config --global user.email "wuguang20084520@163.com"
+$ git config --global user.name "Andy Wu"
+$ git commit -m       "Test, just a test."
+$ git push   -u       origin master
+
+# the repository of software's team
+$ git clone "ssh://andy.wu@gerrit.siengine.com:29418/svi" && scp -p -P 29418 andy.wu@siengine.com:hooks/commit-msg "svi/.git/hooks/"
+# this works after you have add the key on the website of gerrit.
+$ git clone "ssh://andy.wu@10.10.10.218:29418/svi" && scp -p -P 29418 andy.wu@10.10.10.218:hooks/commit-msg "svi/.git/hooks/"
+
+# use this command to log in to the 10.11.60.16.
+ssh -X 10.11.60.16 -p 2201
+If you want to logout
+$ exit
+
+
+# Download the codes, at first you should add a key to gerrit. As if it is github
+# This command works on sesw07
+git clone "ssh://andy.wu@gerrit.siengine.com:29418/svi" && scp -p -P 29418 andy.wu@gerrit.siengine.com:hooks/commit-msg "svi/.git/hooks/"
+
+# The codes on 218 is old.
+git clone "ssh://andy.wu@10.10.10.218:29418/svi" && scp -p -P 29418 andy.wu@10.10.10.218:hooks/commit-msg "svi/.git/hooks/"
+
+# On sesw08: machine.
+used for recording andy's information about work on daily life.
+
+About the vncserver on sesw08:
+/home/andy.wu/.vnc/sesw08:2.log
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+# For example:
+    Copy files from local to another computer. You can use command like this way.
+
+# copy
+scp ./.vimrc andy.wu@sesw08:/home/andy.wu/
+scp -r ./.vim andy.wu@sesw08:/home/andy.wu/ 
+scp ./.bashrc andy.wu@sesw08:/home/andy.wu/ 
+
+# copy from A to B computer/Terminal/machine
+/usr/synopsys/workspace/andy.wu/fixedvdk
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+<> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> 
+
+2020-09-25 08:06:00
+I apply one vnc server port.
+home/andy.wu/.vnc/sesw07:53.log
+
+Using vncserver
+
+we can kill a vncser through port ID
+
+vncserver -list
+vncserver -kill :78
+# turn off vncserver
+ps -ef | grep -i vnc
+kill -9 <ID>
+
+# You can use below command to kill vncserver.
+vncserve -kill :2
+
+# copy between screen.
+# It will pop out an window to choose the option.
+vncconfig
+
+# Restart vncserver
+vncserver :78
+vncserver :78 -geometry 1920x1080
+<> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> <> 
+
+vdk
+/usr/vendor/synopsys
+
+The step for push the codes to the deposit.
+
+git clone https://github.com/wuguang00/shl.git
+git status
+git add    README.md 
+git commit -m "Test, just a test."
+git config --global user.email "wuguang20084520@163.com"
+git config --global user.name "Andy Wu"
+git commit -m "Test, just a test."
+git push   -u origin master
+
+# the repository of software's team
+git clone "ssh://andy.wu@gerrit.siengine.com:29418/svi" && scp -p -P 29418 andy.wu@siengine.com:hooks/commit-msg "svi/.git/hooks/"
+
+this works after you have add the key on the website of gerrit.
+git clone "ssh://andy.wu@10.10.10.218:29418/svi" && scp -p -P 29418 andy.wu@10.10.10.218:hooks/commit-msg "svi/.git/hooks/"
+
+2020-11-12 14:45:11
+About the vncserver on sesw08:
+/home/andy.wu/.vnc/sesw08:2.log
+
+
