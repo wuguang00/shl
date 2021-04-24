@@ -181,14 +181,18 @@ export PS1='\! \w $ '
 # export ARCH=armv7m
 # export CROSS_COMPILE=arm-none-eabi-
 
-# export LC_ALL='en_US.UTF-8'
-# export LANG='en_US.UTF-8'
+export LC_ALL='en_US.UTF-8'
+export LANG='en_US.UTF-8'
+
+export LS_OPTION='--color=auto'
+export LSCOLORS='CafbcxdxbxegedabagGxGx'
 
 alias rm='rm -i'
+alias cp='cp -i'
 alias g='gvim'
 alias gc='gvim ~/.bashrc'
 alias gvc='gvim ~/.vimrc'
-alias svi='cd ~/svi'
+
 alias ll='ls -al'
 alias x='cd ../'
 alias xx='cd ../../'
@@ -203,4 +207,10 @@ alias vdk='/usr/vendor/synopsys/start_rt.sh'
 alias vd='cd /usr/vendor/synopsys/workspace/andy.wu/'
 
 alias soc='cd /usr/vendor/synopsys/workspace/andy.wu'
+
+
+alias uu='cd ~/program/uvm/'
+
+
+
 
