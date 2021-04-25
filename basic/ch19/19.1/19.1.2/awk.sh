@@ -1,11 +1,13 @@
 #!/bin/bash
 
 # gawk almost the same as awk, below some usage about gawk
-# awk is available in Mac, but gawk not available.
+# awk is available in Mac, but gawk not available. Gawk is not default.
+# For gawk, you should install it yourself for a UNIX system.
 
 # Section 2
+
 echo "------------------ cmd 1 ------------------"
-echo "First line." | awk '{print "Hello, world!";}' 
+echo "First line." | awk '{print "Hello, world!"; print "Hello, world!";}' 
 
 echo "------------------ cmd 2 ------------------"
 awk '{print "Hello, world!"}' ./data1.txt
@@ -63,4 +65,15 @@ END {print "End of the File"}' data3.txt
 # Section 7
 echo "------------------ cmd 17 ------------------"
 awk -f script4.awk /etc/passwd
+
+# Ctrl+D = EOF in a UNIX system.
+
+# -F  fs
+# -f  file
+# -v  var=value
+# -mf N
+# -mr N
+# -W  keyword
+
+
 

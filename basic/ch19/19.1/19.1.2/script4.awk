@@ -1,7 +1,7 @@
 BEGIN {
     print "The latest list of users and shells"
-    print " UserID \t Shell "
-    print "-------------\t\t --------"
+    print "UserID \t                \t Shell "
+    print "------------- \t\t     \t --------"
     FS=":"
 }
 
@@ -10,5 +10,5 @@ BEGIN {
 }
 
 END {                                   # END must match a {
-    print "This concludes the listing"
+    print "This concludes the listing."
 }
