@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/andy.wu/program/tclsh/TckTk_Toolkit/s03_variable'
+let g:netrw_dirhist_2='/home/andy.wu/program/tclsh/TckTk_Toolkit/s03_variable/3.7_query_array'
+let g:netrw_dirhist_3='/home/andy.wu/program/py/practice'
+let g:netrw_dirhist_4='/home/andy.wu/program/shl/3cshells'

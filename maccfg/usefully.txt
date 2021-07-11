@@ -1,0 +1,12 @@
+
+2021-07-09 16:02:33
+fg: Resume jobspec in the foreground, and make it the current job.
+
+If you want to upload the file to the LINUX SERVER, you can use filezilla
+
+for the vimrc .vim
+
+
+
+
+

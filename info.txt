@@ -106,3 +106,8 @@ About the vncserver on sesw08:
 /home/andy.wu/.vnc/sesw08:2.log
 
 
+
+
+
+
+
