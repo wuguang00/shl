@@ -8,3 +8,4 @@ MEMORY
 }
 
 INCLUDE "sections.ld"
+

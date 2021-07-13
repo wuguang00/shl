@@ -10,6 +10,7 @@
 int main(int argc, char* argv[])
 {
     printf("Hello ARM!\n");
+    printf("Hello ARM!\n");
     
     return 0;
 }
