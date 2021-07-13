@@ -1,0 +1,13 @@
+
+
+# What you can do for the WIFI/WLAN at home?
+# Forget the WIFI/WLAN at first
+# Then execute below command.
+ipconfig /release
+ipconfig /renew
+
+# For VPN can't connect to my WIFI in my house.
+# Last I reset the router of my house again. Then it can connect.
+
+
+

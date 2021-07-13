@@ -1,6 +1,6 @@
 #!/bin/csh
 
-ed bert <<%EditCommandsFilename
+ed bert << %EditCommandsFilename
 a
 a
 a
