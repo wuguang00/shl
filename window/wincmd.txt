@@ -11,3 +11,5 @@ ipconfig /renew
 
 
 
+# for the wallpaper in you windows, you can put the pictures in the directory for use..
+# C:\Windows\Web\Wallpaper\Window 10
