@@ -1,0 +1,106 @@
+1. vplanner suppot the characters: and, or, &, $
+    similart to regular expression.
+
+2. simple flow for all about the coverage.
+    flow for toggle coverage.
+
+a) -o "+define+TOGGLE_COV +xmcoverage+t +uncoverwrite -covdut y31mF -covfile cov1.ccf
+b) run_vsim_cov.py --c imcregress --p y31m --a LPDDR5 --l log --w file_to_store --toggle -t --i instance.path
+c) fcov --l coverage_file_to_store --w ctcc_geb --geb y_name
+
+
+Usage about VCS another vendor's tool
+
+6. fcov.py --p y31m --a LPDDR5 --m LP5_model --l test_tool --hvp LP5_vplan --w gen_vip_0116
+7. runvsim
+8. selectpackage -t dev -p ARCH/REV [PROJ/REV]
+9. python fcov --p --a --m --l test_tool -hvp refine LP5.direction --w gen_hvp_0113 refine
+10. fcov.py --a LP5 --e LP5.el --p y31m --l log_vcs_0116 --w coverage_vcs_0116 --f vcs
+    run_vsim_cov.py
+
+
+command used in Micorn DRAM, coverage team.
+
+1. vsim -sr checkin -x x8 -fx -l log_ctcc_coverpoint_1 -g 0
+    -o "+xmcoverage+t +xmcoverwrite" -covdut y31mF -covfile cov1.ccf
+
+2. vsim -sr checkin -x x8 -fx -l log_ctcc_coverpoint_1 -g 0
+    -o "+define+CTCC_CUSTMIZED_toggle_coverage +xmcoverage+u +xmcoverwrite" -covdut y31mF -covfile LPDDR5/vplan/cov1.ccf
+
+    rank -html -cout html -rank
+
+
+vmanager> config appearance.user.dynamic -detailed -report -set false;
+    config vplan.MODEL_RULE.UNION -set UNION; collect /runs/sim_cov/wuguang/vsim_log.dir -load; load -vplan ./vplanx; load -vplan -refinement refine.file
+
+    report_vplan_overwrite -out x8 -detail -metrics block:function:toggle coveragegroup -both -report_toggle regular; rank-html -out_html
+
+
+about cov.ccf
+
+//optimize the coverage dump performance
+set covergroup -optimize-dump 
+// to enable related code coverages
+
+select_coverage -c -module y31mF
+set_libcell_scoring
+
+
+The parameters for irun:
+    -checkargs
+
+The parameters for imc:
+    imc -memlimit 16G -licqueue -execcmd "config appearance.user.dynamic -detailed -report -set false;
+    config analysis.analysis_grades_mem_limit -set 16000;
+    load -run cov work/scope_ucd2669709981; report -detail -html -metrics covergroup -overwrite -out runs/sim_cov/wuguang/verilog.y31m wan/cov -inst y31mF ....;
+
+    use_dynamic_report unmark
+
+About merge coveage database: use imc merge to generate a merged file.
+
+    imc -licqueue -exec imcregress/%s'%(script_file_name), shell=True
+
+    hvp.map:
+        top::Golden_model::arch_cover::CgModelRegister::SHARE {this.config.get_default.design.
+
+
+In GVIM:
+    \n \r means Enter/Return character
+
+    clear ^M: %s/(^v, ^M)//g
+    ^v: ctrl + v
+    ^M: ctrl + M 
+
+Wuguang@2019
+the last passed used in Micron
+
+locate -<trig> [Expression]
+
+2020.1.16
+
+the information in Micron's study.
+
+1. Many kinds of characters in English
+2. writing testbench.pdf
+3. memory systems - Cache, DRAM, Disk.pdf
+4. DRAM circuit Design fundamental and high speed Topics.pdf
+
+    p_sequencer.ip_tr_port.get_next_item(ip_tr);
+    p_sequencer.ip_tr_port.item_doen();
+
+simple flow for Candence: flow
+
+1. updated vplan report manually
+2. generate vplan without refinefile
+    python gen_report.py --v *.vplanx --c x8 --e "None" --d test_no_refine regress/regression
+3. to generate vplan
+    python LPDDR5/vplan/fcov.py --p y31am --a LP5 --m LPDDR5.model --l test_no_refine --vp lp5_2deep_vplan --w gen_vip_0116p_0116
+4. GUI CSV -> vplanx
+5.  use the new plan to gnerate no refine report again
+    python generate_report.py --v vplanx --c x8 --e "None" --d test_tool --regress/regression
+6. generate vplan refine
+    python python fcov.py --p y31m --a lp5 --m lp5_model --l test_tool --refine LPDDR5_direct_refine --w gen_refine_0116
+7. generate vplan again
+
+
+
