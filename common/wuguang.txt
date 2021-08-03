@@ -1,0 +1,16 @@
+
+# How you can untar a file .gpg
+# You can use below commands
+
+$ man gpg
+$ which gpg
+
+# For example, you can use it like this.
+
+At last, you should give the password to untar the file.
+
+$ gpg --output out1.tgz --decrypt Verisilicon_HW_gc620sp
+
+
+
+
