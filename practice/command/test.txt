@@ -1,0 +1,3 @@
+ls
+date
+cat cmd_xargs.sh
