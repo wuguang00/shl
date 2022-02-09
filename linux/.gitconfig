@@ -1,5 +1,38 @@
+[alias]
+    dt = difftool
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    mt = mergetool
+    cf = config
+    line = log --oneline
 
+# [diff]
+#     tool = bcompare
 
+[difftool]
+    prompt = false
+    trustExitCode = true
+
+[user]
+    name = wuguang
+    email = wuguang20084520@163.com
+
+[color]
+    ui = ture
+
+[pull]
+    rebase = true
+
+[core]
+    editor = vim
+
+# [difftool "bcompare"]
+#     cmd = /ic/tools/bcompare/4.3.3/bcompare.sh \"$LOCAL\" \"$REMOTE\"
+# 
+# [credention]
+#     helper = store
 
 
 
