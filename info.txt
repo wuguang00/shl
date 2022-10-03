@@ -111,4 +111,9 @@ About the vncserver on sesw08:
 
 
 
+# The flow for github 2022-10-03 18:21:29
+# login to github.com to get a token.
+# Download the database using ssh.
+# then you can git push origin master.
+# It will be successful to push the repository.
 
