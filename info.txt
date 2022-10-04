@@ -117,3 +117,14 @@ About the vncserver on sesw08:
 # then you can git push origin master.
 # It will be successful to push the repository.
 
+
+# valid command for Raspberry Pi
+# Below command show permission denied.
+git clone git@github.com:wuguang00/shl.git
+# Below command works well.
+git clone https://github.com/wuguang00/shl.git
+git commit -m "Try for git about github."
+git push
+
+
+
