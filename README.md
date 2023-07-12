@@ -1,5 +1,5 @@
 # shl
-# This git repository is used for saving useful shell sripts
+# This git repository is used for saving useful shell scripts
 #
 # -- Thu Nov 14 23:05:23 CST 2019
 # -- basic          This file contains src: Linux Command Line and Shell Script Bible, 3E.
